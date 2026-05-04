@@ -7,7 +7,7 @@
 		},
         image: {
             type: String,
-            defaults: '/img/profile_img.jpg'
+            defaults: '/img/profile_img.webp'
         },
 		copy: {
 			type: String,

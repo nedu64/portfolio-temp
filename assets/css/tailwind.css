@@ -54,14 +54,10 @@ h6 {
 	}
 
     @media screen and (min-width: 1024px) {
-		/* grid-template-columns: 200px 1fr; */
+		grid-template-columns: repeat(14, 1fr);
 		grid-template-areas:
-            "header header header header header header header header header header header header"
-		    "footer content content content content content content content content content content content"
-		    "footer content content content content content content content content content content content";
-	}
-
-	@media screen and (min-width: 1024px) {
-		/* column-gap: 40px; */
+            "header header header header header header header header header header header header header header"
+		    "footer content content content content content content content content content content content content content"
+		    "footer content content content content content content content content content content content content content";
 	}
 }
