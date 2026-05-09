@@ -17,7 +17,7 @@
                 <div class="w-full lg:w-1/2 flex flex-col gap-10  lg:py-20">
                     <div class="flex flex-col gap-4 ">
                         <h1 class="font-bold text-3xl lg:text-4xl font-['Oswald']">{{ heading ?? 'Welcome' }}</h1>
-                        <p class="text-base md:text-lg lg:text-[20px] lg:leading-8">
+                        <p class="text-base md:text-lg lg:leading-8">
                         {{ copy ?? 'Introduction' }}
                         </p>
                     </div>

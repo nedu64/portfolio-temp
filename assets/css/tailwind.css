@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: Space Grotesk, sans-serif;
+    font-family: sans-serif;
 
 	&.nav-open {
 		@apply overflow-hidden;

@@ -15,6 +15,9 @@ useSeoMeta({
       :resume-link="home.meta.resumeLink"
       :resume-link-text="home.meta.resumeLinkText"
     />
-    <Projects />
+    <div class="flex flex-col gap-10 py-10 lg:py-24 lg:gap-24">
+      <Projects />
+      <Experience />
+    </div>
   </div>
 </template>

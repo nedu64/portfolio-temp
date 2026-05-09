@@ -16,7 +16,7 @@
                 </div>
             </div>
             <hr class="w-full h-[1px] border-t-[1px] border-dashed border-grey-200" />
-            <ContentRenderer v-if="data" :value="data" class="prose max-w-none md:text-[20px] lg:text-xl" />
+            <ContentRenderer v-if="data" :value="data" class="prose max-w-none lg:text-lg" />
         </article>
     </div>
 </template>

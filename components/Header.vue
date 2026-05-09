@@ -9,8 +9,8 @@
             linkText: 'About'
         },
         {
-            link: '/#timeline',
-            linkText: 'Timeline'
+            link: '/#projects',
+            linkText: 'Projects'
         },
         {
             link: '/#experience',
