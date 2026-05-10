@@ -9,7 +9,7 @@
             linkText: 'About'
         },
         {
-            link: '/#projects',
+            link: '/projects',
             linkText: 'Projects'
         },
         {
@@ -66,7 +66,7 @@
             >
                 <ul class="flex flex-col gap-y-4 md:flex-row md:justify-end items-center gap-x-16 px-6 pt-28 pb-10 md:p-0 md:gap-y-0">
                     <li v-for="(item, index) in navigation" :key="index" class="uppercase cursor-pointer tracking-widest py-4 w-full md:w-auto md:p-0 md:transition-all md:duration-75 md:hover:text-primary-light">
-                        <a :href="item.link"><span>{{ item.linkText }}</span></a>
+                        <a :href="item.link" @click="navOpen = false"><span>{{ item.linkText }}</span></a>
                     </li>
                 </ul>
             </nav>
