@@ -1,0 +1,2 @@
+nvm use 22 - to chnage version of nvm to use. 
+npm run dev -  to run project. 
