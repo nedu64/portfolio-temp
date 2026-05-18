@@ -41,7 +41,7 @@
 </script>
 <template>
     <header class="border-b-2 border-primary-light page-layout__header font-['Oswald'] font-bold bg-black"> 
-        <section class="min-h-[40px] md:min-h-[20px] flex items-center justify-between px-8 py-4 text-white">
+        <section class="min-h-[40px] md:min-h-[20px] flex items-center justify-between px-4 md:px-6 lg:px-8 py-4 text-white">
             <a href="/">
                 <span class="sr-only">LOGO</span>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-12 text-primary-light">
