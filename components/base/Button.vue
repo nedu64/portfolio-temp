@@ -34,7 +34,7 @@
     })
 </script>
 <template>
-    <a v-if="type === 'link'" :href="link ?? ''" :class="btnClass" :target="target">
+    <a v-if="element === 'link'" :href="link ?? ''" :class="btnClass" :target="target">
         <slot />
     </a>
     <button v-else :class="btnClass" :type="type">
