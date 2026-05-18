@@ -12,7 +12,7 @@
 
 <template>
     <section class="bg-black">
-        <div class="px-8 lg:px-0">
+        <div class="px-4 md:px-6 lg:px-0">
             <article class="lg:max-w-[900px] xl:max-w-[1300px] xl:px-10 mx-auto flex flex-col-reverse gap-6 lg:flex-row lg:gap-12 py-10 lg:px-0">
                 <div class="w-full lg:w-1/2 flex flex-col gap-10  lg:py-20">
                     <div class="flex flex-col gap-4 ">

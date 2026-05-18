@@ -8,7 +8,7 @@
     const { data: projects } = await useAsyncData(() => queryCollection('projects').where('path', '<>', '/projects').all())
 </script>
 <template>
-    <div class="px-8 lg:px-0">
+    <div class="px-4 md:px-6 lg:px-0">
         <article class="w-full md:mx-auto md:max-w-[900px] xl:max-w-[1300px] xl:px-10 mx-auto py-10 lg:px-0 lg:py-24 flex flex-col gap-8 lg:gap-10">
             <div class="flex flex-col gap-4">
                 <BaseHeading heading-level="1" id="projects" theme="dark">{{ data.title }}</BaseHeading>

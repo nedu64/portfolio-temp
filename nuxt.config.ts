@@ -30,6 +30,10 @@ export default defineNuxtConfig({
     renderer: {
       anchorLinks: false
     }
+  },
+  runtimeConfig: {
+    resendApiKey: process.env.RESEND_API_KEY ?? '',
+    ccEmail: process.env.CC_EMAIL ?? '',
+    primaryEmail: process.env.PRIMARY_EMAIL ?? ''
   }
-
 })

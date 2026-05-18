@@ -6,7 +6,7 @@
     })
 </script>
 <template>
-    <div class="px-8 lg:px-0">
+    <div class="px-6 lg:px-0">
         <article class="w-full md:mx-auto md:max-w-[900px] xl:px-10 mx-auto py-10 lg:px-0 lg:py-24 flex flex-col gap-8 lg:gap-10">
             <img :src="data.meta.image" class="object-contain h-full w-full rounded-lg" />
             <div class="flex flex-col gap-2">
