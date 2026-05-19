@@ -8,9 +8,9 @@
             <BaseHeading heading-level="2" id="experience" theme="dark" class="text-left lg:text-center mb-10">Experience</BaseHeading>
             <div class="divide-y-[1px] divide-gray-200 lg:divide-y-0">
                 <div v-for="(data, index) in experience" class="w-full flex" :class="(index + 1) % 2 === 0 ? 'justify-end' : 'justify-start'">
-                    <div class="w-full lg:w-1/2 lg:border-gray-200" 
+                    <div class="w-full lg:border-gray-200" 
                         :class="[
-                            (index + 1) % 2 === 0 ? 'lg:border-l' : 'lg:border-r',
+                            (index + 1) % 2 === 0 ? 'lg:border-l lg:w-1/2' : 'lg:border-r lg:w-[50.1%]',
                             index === 0 ? 'pb-10 lg:py-10' : 'py-10'
                         ]"
                     >
