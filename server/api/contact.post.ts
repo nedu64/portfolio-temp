@@ -16,11 +16,10 @@ export default defineEventHandler(async (event) => {
     const resend = new Resend(config.resendApiKey);
 
     await resend.emails.send({
-        from: 'Portfolio Contact <onboarding@resend.dev>',
+        from: `Portfolio Contact ${config.mailDomain}`,
         to: config.primaryEmail,
-        cc: config.ccEmail,
         replyTo: email,
-        subject: `Portfolio message from ${email}`,
+        subject: `New message from b-cube.dev`,
         html: `<p>${message.replace(/\n/g, '<br>')}</p>`,
     });
 })
