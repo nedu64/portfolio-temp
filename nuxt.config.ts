@@ -33,7 +33,7 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     resendApiKey: process.env.RESEND_API_KEY ?? '',
-    ccEmail: process.env.CC_EMAIL ?? '',
-    primaryEmail: process.env.PRIMARY_EMAIL ?? ''
+    primaryEmail: process.env.PRIMARY_EMAIL ?? '',
+    mailDomain: process.env.MAIL_DOMAIN ?? '',
   }
 })
