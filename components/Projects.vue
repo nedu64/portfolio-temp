@@ -1,5 +1,12 @@
 <script setup>
-    const { data: projects } = await useAsyncData(() => queryCollection('projects').limit(4).all())
+    const props = defineProps({
+        projectCount: {
+            type: Number,
+            default: 4
+        }    
+    });
+
+    const { data: projects } = await useAsyncData(() => queryCollection('projects').limit(props.projectCount).all())
 </script>
 
 <template>
@@ -18,9 +25,7 @@
                 />
             </div>
             <div class="flex justify-center">
-                <BaseButton link="/projects" :style="'primary'">
-                    View All Projects
-                </BaseButton>
+                <BaseButton link="/projects" :style="'primary'" text="View All Projects" />
             </div>
         </article>
     </section>

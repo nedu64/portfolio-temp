@@ -5,11 +5,23 @@ export default defineContentConfig({
   collections: {
     content: defineCollection({
       type: 'page',
-      source: '**/*.md'
+      source: 'index.md',
+      schema: z.object({
+        heading: z.string(),
+        resumeLink: z.string(),
+        image: z.string(),
+        resumeLinkText: z.string(),
+        projectCount: z.number(),
+      })
     }),
     projects: defineCollection({
       type: 'page',
-      source: 'projects/**/*.md'
+      source: 'projects/**/*.md',
+       schema: z.object({
+        heading: z.string(),
+        description: z.string(),
+        tags: z.array(z.string())
+       })
     }),
     experience: defineCollection({
       type: 'data',
