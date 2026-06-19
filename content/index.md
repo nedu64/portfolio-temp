@@ -1,9 +1,9 @@
 ---
 title: Ben – Portfolio | Data Science Projects & Work Showcase
 description: Data Scientist fluent in Python & R, passionate about turning data into insights through machine learning and advanced analytics.
-heading: Hi Theree 👋
+heading: Hi There 👋
 image: /img/profile_img.webp
-projectCount: 4
+projectCount: 5
 resumeLink: https://baksben.github.io/documents/Resume_Bakwenye_Benjamin.pdf
 resumeLinkText: View Resume
 ---
