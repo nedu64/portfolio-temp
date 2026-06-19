@@ -5,11 +5,21 @@ export default defineNuxtConfig({
   imports: {
     autoImport: true
   },
-  modules: ['@nuxt/icon', '@nuxtjs/tailwindcss', '@nuxt/fonts', '@nuxt/content'],
+  modules: [
+    '@nuxt/icon',
+    '@nuxtjs/tailwindcss',
+    '@nuxt/fonts',
+    '@nuxt/content',
+    'nuxt-studio'
+  ],
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
     // and more...
+  },
+  studio: {
+    route: '/admin',
+    dev: false,
   },
   content: {
     build: {
@@ -22,7 +32,7 @@ export default defineNuxtConfig({
             sepia: 'monokai'
           },
           langs: [
-            'python'
+            'python','js'
           ]
         },
       }

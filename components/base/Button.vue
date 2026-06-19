@@ -4,6 +4,10 @@
             type: String,
             default: ''
         },
+        text: {
+            type: String,
+            default: ''
+        },
         style: {
             type: String,
             default: 'primary',
@@ -35,9 +39,12 @@
 </script>
 <template>
     <a v-if="element === 'link'" :href="link ?? ''" :class="btnClass" :target="target">
-        <slot />
+        {{ text ?? 'Link' }}
     </a>
     <button v-else :class="btnClass" :type="type">
-        <slot />
+        <span class="inline-flex items-center gap-1">
+            <span>{{ text ?? 'Button' }}</span>
+            <slot name="loading"></slot>
+        </span>
     </button>
 </template>
